@@ -103,7 +103,7 @@ async function handleUpload(request: Request, env: Env): Promise<Response> {
 		}
 
 		const ext = '.' + file.name.split('.').pop();
-		const name = file.name.slice(0, -ext.length);
+		const name = file.name.slice(0, -ext.length).replace(/\s+/g, '-');
 		const hash = Date.now().toString(16).slice(-8);
 		const filename = `${name}-${hash}${ext}`;
 
