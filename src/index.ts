@@ -6,7 +6,7 @@
 // Replace with your actual frontend URL
 import { R2Bucket } from '@cloudflare/workers-types';
 
-const ALLOWED_ORIGINS = ['https://socionity.uk', 'http://localhost:3000', 'https://cdn.socionity.uk'];
+const ALLOWED_ORIGINS = ['https://socionity.uk', 'http://localhost:3000', 'https://cdn.socionity.uk', 'https://nakama.lol'];
 
 export interface Env {
 	R2_BUCKET: R2Bucket;
